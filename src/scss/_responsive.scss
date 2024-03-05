@@ -1,0 +1,140 @@
+@import "mResponsive";
+
+@include breakpoint(custom990) {
+
+}
+
+@include breakpoint(custom992){
+
+}
+
+@include breakpoint(desktopRetina) {
+}
+
+@include breakpoint(laptop) {
+    
+    .navbar-nav{
+
+        display: block;
+
+        .nav-item{
+            text-align: center;
+        }
+    }
+
+    .body-model,
+    .equipment,
+    .programs{
+        .wrapp_program{
+        
+            .title-size{
+                height: 80px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .contacto__intro{
+        .overlay-sm{
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%); 
+        }
+    }
+
+    .spa-management__redes{ 
+        &::before{
+            display: none;
+        }
+    }   
+
+    .contacto #recaptchaFooter {
+        -ms-transform: scale(0.99);
+        transform: scale(0.99);
+        -webkit-transform: scale(0.99);
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
+@include breakpoint(mobile) {
+
+    .navbar-nav{
+
+        display: block;
+
+        .nav-item{
+            text-align: center;
+        }
+    }
+
+    .inx_servicios{
+        .wrapp_servcio{
+            .title_item_servicio{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .banner_corporal {
+        .rellax-wrapper {
+            .logo-corporales {
+                position: absolute;
+                top: 6%;
+                left: 5%;
+                width: 30% !important;
+            }
+        }
+    }
+
+
+    .benefits-body{
+        .wrapper-img-benefits {
+            position: absolute;
+            width: 100%;
+            right: 0;
+            bottom: 2%;
+            opacity: 0;
+        }
+    }
+
+
+    .body-model,
+    .equipment,
+    .programs{
+        .wrapp_program{
+
+            .title_item_servicio{
+                font-size: 1rem;
+
+            }
+            .title_item_servicio_large{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .contacto__intro{
+        .overlay-sm{
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%); 
+        }
+    }
+
+    .spa-management__redes{ 
+        &::before{
+            display: none;
+        }
+    }   
+  
+    .contacto #recaptchaFooter {
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
